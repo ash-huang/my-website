@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+html{
+	background: var(--colorlight);
+}
+
+.link {
+	color:var(--colorcontrast);
+}
+
+.intro{
+	background: var(--colorlight);
+}
+
+.intro_text{
+	background: var(--colorlight);
+}
+/* phones */
+@media only screen and (max-width: 768px) {
+
+	html{
+		background: var(--colordark);
+	}
+
+	.link{
+		color:var(--colorcontrast);
+	}
+
+	.intro{
+		margin-top:0px;
+	}
+
+
+	.intro_text{
+		margin-top: 0px;
+		background: var(--colordark);
+		color: var(--white50);
+	}
+
+	.single_page {
+		margin-top:0px;
+		padding-top: 0px;
+	}
+}

@@ -1,0 +1,580 @@
+@charset "utf-8";
+
+html{
+	background: var(--colordark);
+	overflow-x: hidden;
+    width: 100%;
+}
+
+section{
+	width:100%;
+	margin: auto;
+}
+
+h3{
+	font-size:1.25em;
+	font-weight: 500;
+	font-family: var(--mainfont);
+}
+
+.single_page {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: auto;
+	margin-top:80px;
+	padding-top: 100px;
+	position: relative;
+	box-sizing: border-box;
+	gap: 100px;
+}
+
+.link{
+	font-size:1.25em;
+	color:var(--darkgray);
+	font-weight: 400;
+	font-family: var(--titlefont);
+}
+
+.textbox{
+	display: flex;
+	min-height: 3em;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	font-size:0.9em;
+	color:var(--whitetheme);
+	text-align: center;
+}
+
+/* Styles the link directly */
+.textbox .link {
+  color: var(--colorcontrastbright); /* Replace with your hex color, RGB, or color name */
+  text-decoration: underline; /* Optional */
+}
+
+.textbox-separator{
+	display: flex;
+	height: 3em;
+	align-items: center;
+	justify-content: center;
+	font-size:1.0em;
+	color:var(--whitetheme);
+	text-align: center
+	border:2px solid blue;	
+	background-color:var(--colormid);
+	margin-top: 50px;
+	padding: 10px;
+}
+
+.one_pic {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 0px;
+	position: relative;
+	display: block;
+}
+
+.one_pic img {
+	width: 100%;
+	height: auto;
+	display: block;
+	filter: grayscale(100%);
+	transition: filter 1s ease;
+}
+
+/* 2. THE COLOR OVERLAY */
+.one_pic::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: var(--colorcontrast);
+	mix-blend-mode: soft-light; /* overlay | multiply | screen | color | soft-light */
+	opacity: 0.8;
+	pointer-events: none;
+	transition: opacity 1s ease;
+}
+
+/* 3. THE HOVER (REVEAL COLOR) */
+.one_pic:hover img {
+	filter: grayscale(0%);
+}
+
+.one_pic:hover::after {
+	opacity: 0;
+}
+
+.two_pic {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	background: red;
+}
+
+.two_pic img {
+	width: 45%;
+	padding:20px;
+	height: auto;
+	display: block;
+}
+
+.intro{
+	display: flex;
+	position: relative;
+	width:70%;
+	height: auto; 
+	padding:0px 0px 0px;
+	margin-top:20px;
+	margin-bottom: 30px;
+	box-sizing: border-box;
+
+}
+
+.intro_text{
+	margin-top: 20px;
+	display:block;
+	width:100%;
+	height: auto; 
+	padding:30px 80px;
+	color:var(--whitetheme);
+	box-sizing: border-box;
+	text-align: justify;
+	font-size:0.9em;
+	line-height: 2em;
+	background:var(--colormid);
+	border: 1px solid var(--whitetrans);
+
+}
+
+.concept-section {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	padding: 10px;
+	max-width: 90%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.concept-section-nogap {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+	padding: 10px;
+	max-width: 90%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.concept-section-nogap-height {
+	display: flex;
+	flex-direction: row; /* 確保左右並排 */
+	justify-content: center;
+	align-items: stretch; /* 讓左右兩個 box 強制等高 */
+	gap: 0px;
+	padding: 10px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.normal_box {
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	overflow: visible;
+	transition: transform 0.3s;
+}
+
+.normal_box_height_full {
+	display: flex;
+	flex-direction: column;
+	/* 在這裡直接鎖定你想要的高度 */
+	height:105vh;
+	/* 0 (不主動放大) | 1 (當空間不夠時，允許它依比例彈性縮小) | auto (基本寬度由圖片決定) */
+	flex: 0 1 auto;
+	overflow: hidden;
+	transition: transform 0.3s;
+}
+
+.normal_box_height_60 {
+	display: flex;
+	flex-direction: column;
+	/* 在這裡直接鎖定你想要的高度 */
+	height:60vh;
+	/* 0 (不主動放大) | 1 (當空間不夠時，允許它依比例彈性縮小) | auto (基本寬度由圖片決定) */
+	flex: 0 1 auto;
+	overflow: hidden;
+	transition: transform 0.3s;
+}
+
+.normal_box_height img {
+	height: 100%;
+	width: auto;
+	object-fit: contain; /* 如果比例不合，會自動裁切而不拉伸變形 */
+}
+
+.enlarge_box {
+	height: auto;
+	overflow: hidden;
+	transition: transform 0.3s;
+}
+
+.enlarge_box:hover {
+	transform: scale(1.05);
+}
+
+.imgbox {
+	width: 100%;
+	height: 100%;
+}
+
+.imgbox img {
+	width: 100%;
+ 	height: 100%;
+ 	max-width: 100%;
+	object-fit: contain;
+}
+
+.scalecontainer {
+	display: flex;
+	gap: 10px;
+	width: 90%;
+	max-height: 90vh;
+	margin:auto;
+	justify-content: center;
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+.scale_box {
+	flex: var(--scale); 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.scale_box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	max-height: 80vh;
+
+}
+
+.imgtext{
+	position: relative;
+	justify-content: bottom;
+	align-items: center;
+	text-align: center;
+	font-size: 0.8em;
+	color:var(--white80);
+}
+
+/*Lens*/
+.zoom-img{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 1;
+}
+
+.img-wrapper {
+	position: relative;
+	max-width: 100%;
+}
+
+.img-wrapper img {
+	width: 100%;
+	height: auto;
+	display: block;
+	z-index: 5000;
+}
+
+.lens {
+	position: absolute;
+	z-index: 6000;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	pointer-events: none;
+	background-repeat: no-repeat;
+	display: none;
+	border: 0px solid var(--darkgray);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.plan{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 50px;
+	position: relative;
+	display: block;
+}
+
+.section-label{
+	font-family: var(--titlefont);
+}
+
+.diagram-image {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 2em 0;
+	padding: 0;
+	width:55%;
+	height: clamp(50vh, 85%, 90vh);
+	overflow: hidden;
+}
+
+.diagram-image img {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	object-fit: cover;
+	margin-left: 5em; /* push image slightly to the right */
+}
+
+.diagram-text{
+	flex: 1 1 40%; 
+	padding:50px;
+
+	box-sizing: border-box;
+	text-align: left;
+	font-family: var(--titlefont);
+	font-size:0.9em;
+	line-height: 2em;
+
+
+	margin-left: -8%;
+	margin-right: 8%;
+
+	transition: border 1.5s, background 0.5s;
+	-webkit-transition: border 1.5s, background 0.5s;
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out;/* Safari */
+}
+
+.js_pic {
+	display: flex;
+	margin-top:50px;
+	justify-content: center;
+	align-items: center;
+	min-height: 550px;
+
+}
+
+.js_pic canvas {
+	display: block;
+}
+
+.responsive-iframe {
+	width: 70%;
+	aspect-ratio: 16 / 9;
+	max-width: 1200px;
+}
+
+.responsive-iframe-ver {
+	height: 90vh;
+	aspect-ratio: 9 / 16;
+}
+
+/*image-comparison */
+.image-comparison {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9; /* Adjust to your image dimensions */
+  overflow: hidden;
+  user-select: none;
+  cursor: ew-resize;
+}
+
+.image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.image-clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Initially show 50% of the top image */
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  will-change: clip-path;
+}
+
+.proposed-clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Initially shows from 50% to 100% width */
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  will-change: clip-path;
+  pointer-events: none;
+}
+
+.comparison-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+/* Optional handle circle indicator */
+.comparison-handle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border: 0px solid #333333;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.comparison-label {
+  position: absolute;
+  top: 0px;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0px;
+  pointer-events: none; /* Prevents labels from interfering with mouse tracking */
+  z-index: 10;
+}
+
+.label-existing {
+  left: 0px; /* Top left of the existing image */
+}
+
+.label-proposed {
+  right: 0px; /* Top right of the proposed image */
+}
+
+/* phones */
+@media only screen and (max-width: 768px) {
+
+	html, body {
+	  margin: 0;
+	  padding: 0;
+	  overflow-x: clip; /* Use 'clip' instead of 'hidden' if you need to stop horizontal scroll without breaking sticky */
+	}
+
+	article {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.one_pic {
+		margin-top: 0px;
+	}
+
+
+	.intro {
+		width: 100%;
+		padding: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.intro_text {
+		padding: 0 20px;
+		box-sizing: border-box;
+		font-size: 0.9em;
+		line-height: 1.8em;
+		background:var(--colordark);
+		border: 0px solid var(--whitetrans);
+		margin-top: 0px;
+
+	}
+
+	.concept-section-nogap-height {
+		flex-direction: column;
+	}
+
+	.normal_box_height {
+		width:90vw;
+		height: auto;
+	}
+
+.normal_box_height_full {
+		height: auto;
+
+
+}
+
+.normal_box_height_60 {
+		height: auto;
+
+}
+
+	.scalecontainer {
+		width: 90%;
+		padding: 2px;
+	}
+	.img-wrapper {
+		max-width: 100%;
+	}
+	.concept-section {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 10px;
+		padding: 2px;
+		max-width: 90%;
+		margin: 20px auto;
+		justify-content: center;
+	}
+
+	.enlarge_box {
+		width: 70%;
+		margin:0 auto;
+	}
+
+	.enlarge_box:hover {
+		transform: scale(1.2);
+	}
+
+	.responsive-iframe {
+		width: 100%;
+	}
+
+	.responsive-iframe-ver {
+		width: 100%;
+		aspect-ratio: 9 / 16;
+	}
+}

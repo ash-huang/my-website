@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300..700&display=swap');
+
+html {
+	scrollbar-gutter: stable;
+}
+
+/* Root variables */
+:root {
+	--fontcolor: rgba(93, 92, 136, 1);
+
+	/*color theme pink and blue*/
+	--colorlight:rgba(112, 124, 144, 1);
+	--colormid:rgba(56, 62, 72, 1);
+	--colordark:rgba(28, 31, 36, 1);
+	--colorcontrast:rgba(221, 149, 180, 1);
+	--colorcontrasttrans:rgba(221, 149, 180, 0.5);
+	--colorcontrast2:rgba(183, 161, 172, 1);
+	--colorcontrastbright:rgba(255, 161, 215, 1);
+
+	/*color theme orange and purple*/
+	/*--colorlight:rgba(165, 132, 146, 1);
+	--colormid:rgba(94, 69, 79, 1);
+	--colordark:rgba(61, 53, 56, 1);
+	--colorcontrast:rgba(198, 65, 24, 1);
+	--colorcontrasttrans:rgba(198, 65, 24, 0.5);*/
+
+	/*color theme orange and green*/
+	/*--colorlight:rgba(131, 155, 147, 1);
+	--colormid:rgba(87, 112, 98, 1);
+	--colordark:rgba(64, 73, 68, 1);
+	--colorcontrast:rgba(231, 173, 86, 1);
+	--colorcontrasttrans:rgba(231, 173, 86, 0.5);*/
+
+	/*color theme lime and gray*/
+	/*--colorlight:rgba(203, 203, 203, 1);
+	--colormid:rgba(130, 129, 128, 1);
+	--colordark:rgba(64, 73, 68, 1);
+	--colorcontrast:rgba(245, 222, 101, 1);
+	--colorcontrasttrans:rgba(2245, 222, 101, 0.5);*/
+
+	/*color theme red and blue*/
+	/*--colorlight:rgba(139, 205, 207, 1);
+	--colormid:rgba(63, 77, 88, 1);
+	--colordark:rgba(46, 56, 63, 1);
+	--colorcontrast:rgba(204, 56, 42, 1);
+	--colorcontrasttrans:rgba(204, 56, 42, 0.5);*/
+
+	/*black and white*/
+	--whitetheme: rgba(255, 255, 255, 1);
+	--white50: rgba(255, 255, 255, 0.5);
+	--white80: rgba(255, 255, 255, 0.8);
+	--darkgray: rgba(100, 100, 100, 1);
+	--lightgray: rgba(150, 150, 150, 1);
+	--midgray: rgba(20, 20, 20, 0.5);
+	--bklight: rgba(220, 220, 220, 0.5);
+
+	/*font*/
+	--mainfont: "Varta", sans-serif;
+	--titlefont: "Montserrat", sans-serif;
+}
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.noto-serif-<uniquifier> {
+	font-family: "Noto Serif", serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+	font-variation-settings:
+	"wdth" 100;
+}
+
+body {
+	font-family:
+	"Montserrat",/* English */
+	"Noto Sans",/* English */
+	"Noto Sans TC",/* Traditional Chinese */
+	sans-serif;
+}
