@@ -1,0 +1,78 @@
+<!doctype html>
+<base href="../">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Piranha Chasing Sloth</title>
+
+	<link href="css/root.css" rel="stylesheet" type="text/css">
+	<link href="css/nav.css" rel="stylesheet" type="text/css">
+	<link href="css/project-page.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/specs.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
+	<script src="js/specs.js"></script>
+</head>
+
+<body>
+
+	<header id="main-header"></header>
+	<section>
+		<div id="specs"></div>
+		<div class="one_pic"><img src="images/sloth/IMG_8200.00_00_01_25.Still001.jpg" alt="one_pic"/></div>
+	</section>
+
+	<section class="intro">
+		<div class="intro_text">
+			<p>"Piranha Chasing Sloth" is an interactive project that explores real-time communication between physical sensing and digital representation through Arduino–p5 integration. The system features a small climbing robot, the “Sloth,” whose two front limbs are actuated by a servo motor through a four-bar linkage mechanism. An ultrasonic sensor mounted on the Arduino continuously measures the distance to an approaching object, metaphorically framed as a “piranha.” This distance data is transmitted to p5, where it is visualized as a responsive on-screen piranha image and corresponding textual warnings. When the object is far away, the system remains calm: the Arduino LED turns green, p5 displays a “No worries” message, and the Sloth stays still. As the object approaches, the LED shifts to blue, a piranha image appears and enlarges with proximity, and users can manually control the Sloth’s movement speed via mouse input—walking or running. When the object reaches a critical distance, the interface turns red with a “DANGER!” warning, the Arduino LED switches to red, and the Sloth automatically accelerates. Once the threat retreats to a safe range, the system resets, returning the Sloth to rest and restoring a calm visual and physical state.</p>
+		</div>
+	</section>
+
+	<section class="scalecontainer">
+		<div class="scale_box" style="--scale:1;">
+			<div class="imgbox"><img src="images/sloth/IMG_8086.gif" alt="Concept 1"/></div>
+			<div class="imgtext"><p>Sloth "Arm" Mechanism</p></div>
+		</div>
+		
+		<div class="scale_box" style="--scale:2;">
+			<div class="imgbox"><img src="images/sloth/panel motion_crop.gif" alt="Concept 2"/></div>
+			<div class="imgtext"><p>Climbing Panel Mechanism</p></div>
+		</div>
+
+		<div class="scale_box" style="--scale:1;">
+			<div class="imgbox"><img src="images/sloth/IMG_8200.gif" alt="Concept 2"/></div>
+			<div class="imgtext"><p>Climbing Test</p></div>
+		</div>
+	</section>
+
+
+	<div class="textbox">Mechanism</div>
+
+	<section class="scalecontainer">
+		<div class="normal_box">
+			<div class="imgbox"><img src="images/sloth/DGRM_CommunicationProcess-01.png" alt="Concept 1"/></div>
+		</div>
+	</section>
+
+	<div class="textbox">Arduino and p5 Communication Concept Diagram</div>
+
+	<section class="scalecontainer">
+		<div class="normal_box">
+			<div class="imgbox"><img src="images/sloth/IMG_8224_1.gif" alt="Concept 1"/></div>
+		</div>
+	</section>
+
+	<aside>
+		<a href="#main-header">
+			<div id="totop-placeholder"></div>
+		</a>
+	</aside>
+
+	<footer id="footer"></footer>
+
+</body>
+</html>

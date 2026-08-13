@@ -1,0 +1,28 @@
+<base href="../">
+
+<nav class="filter-nav">
+  <ul>
+    <!-- Give 'all' a parameter so the script knows we clicked a filter -->
+    <li data-target="all"><a href="index.html?tag=all">all</a></li>
+    <li data-target="architecture"><a href="index.html?tag=architecture">architecture</a></li>
+    <li data-target="landscape"><a href="index.html?tag=landscape">landscape</a></li>
+    <li data-target="computational"><a href="index.html?tag=computational">computational</a></li>
+    <li data-target="research"><a href="index.html?tag=research">research</a></li>
+  </ul>
+</nav>
+
+<script>
+$(document).ready(function(){
+    var params = new URLSearchParams(window.location.search);
+    var tag = params.get("tag");
+
+    $("nav.filter-nav li").removeClass("ch_bg");
+
+    // Account for both the fresh page load (!tag) and clicking the 'all' button (tag === 'all')
+    if (!tag || tag === "all") {
+        $("nav.filter-nav li[data-target='all']").addClass("ch_bg");
+    } else {
+        $("nav.filter-nav li[data-target='" + tag + "']").addClass("ch_bg");
+    }
+});
+</script>

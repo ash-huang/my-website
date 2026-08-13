@@ -1,0 +1,172 @@
+{
+	"lakeside-serenity":{
+		"圖片":"images/lakeside-serenity/02_RNDR_View from road to lake.jpg",
+		"title":"Lakeside Serenity",
+		"type":"Individual project",
+		"typology": "Residential / Multi-Family Housing",
+		"site":"Hsinchu, Taiwan",
+		"instructor":"Ling-Li Tseng, Chien-Shuo Pai",
+		"分類":"architecture",
+		"連結":"project/lakeside-serenity.html",
+		"timeline":"Nov 2023 (8 weeks)"
+		},
+
+	"between-mist-and-motion":{
+		"圖片":"images/between-mist-and-motion/04_wind.png",
+		"title": "Between Mist<br>and Motion",
+		"type":"Individual project",
+		"typology": "Material Exploration",
+		"instructor":"Tien Ling",
+		"分類":"architecture",
+		"連結":"project/between-mist-and-motion.html"
+	},
+
+
+	"urban-weavepoint":{
+		"圖片":"images/urban-weavepoint/PERS-Office.jpg",
+		"title":"Urban Weavepoint",
+		"type":"Individual project",
+		"typology": "Urban Design / Commercial & Cultural Hub",
+		"instructor":"Shu-Chang Kung, Chia-Shun Liao, Shu-Hsien Chou",
+		"site":"Taipei, Taiwan",
+		"分類":"architecture",
+		"連結":"project/urban-weavepoint.html",
+		"timeline":"Apr 2024 (8 weeks)"
+
+	},
+
+	"simple-link":{
+		"圖片":"images/simple-link/RNDR_Bridge bottom_print.jpg",
+		"title":"Simple Link",
+		"type":"Individual project",
+		"typology": "Urban Landscape / Pedestrian Public Realm",
+		"instructor":"Yan-Jou Lin",
+		"site":"Taipei, Taiwan",
+		"分類":"landscape",
+		"recognition": "Published in Taiwan Institute of Landscape Architects Magazine",
+		"連結":"project/simple-link.html",
+		"timeline":"1 year graduation project"
+
+	},
+
+	"mutualism":{
+		"圖片":"images/mutualism/IMG_2099_EDIT.jpg",
+		"title":"Mutualism",
+		"type":"Individual project",
+		"typology": "Mixed-Use / Live-Work Architecture",
+		"instructor":"Chien-Shuo Pai, Ling-Li Tseng",
+		"site":"Hsinchu, Taiwan",
+		"分類":"architecture",
+		"連結":"project/mutualism.html",
+		"timeline":"Sep 2023 (8 weeks)"
+	},
+
+	"the-wandering-library":{
+		"圖片":"images/the-wandering-library/DSCF8281.jpg",
+		"title":"The Wandering Library",
+		"type":"Group project",
+		"typology": "Cultural Infrastructure / Public Library",
+		"collaborator":"Yu-Hsiang Hu",
+		"instructor":"Chun-Chieh Fang, Jen-Hwang Ho",
+		"site":"Hsinchu, Taiwan",
+		"分類":"architecture",
+		"連結":"project/the-wandering-library.html",
+		"timeline":"May 2023 (8 weeks)"
+
+	},
+
+	"vibebot":{
+		"圖片":"images/vibebot/car commercial_9090.gif",
+		"title":"VibeBot",
+		"type":"Individual project",
+		"typology": "Kinetic Robotics / Bio-Kinematic Research",
+		"instructor":"June-Hao Hou, Chen-An Lee",
+		"分類":"research,computational",
+		"連結":"project/vibebot.html",
+		"timeline":"Sep 2024 (16 weeks)"
+
+	},
+	"funnel":{
+		"圖片":"images/funnel/Scene1_000_EDIT.jpg",
+		"title":"Funnel Pulse",
+		"type":"Individual project",
+		"typology": "Interactive Installation / Spatial Media",
+		"instructor":"Pei-Hsien Hsu",
+		"分類":"architecture,computational",
+		"連結":"project/funnel.html",
+		"timeline":"Mar 2025 (16 weeks)"
+
+	},	
+	"plug-pause-relieve":{
+		"圖片":"images/plug-pause-relieve/RNDR_Main_wSky.png",
+		"title":"Plug. Pause. Relieve.",
+		"type":"Individual project",
+		"typology":"Civic Infrastructure / Public Sanitation",
+		"site":"Linkou, New Taipei City, Taiwan",
+		"分類":"architecture",
+		"recognition": "Honorable Mention — DiscoverArch Student Project Awards (2025)",
+		"連結":"project/plug-pause-relieve.html",
+		"timeline":"Dec 2025 (5 weeks)"
+	},	
+	"eye-tracking":{
+		"圖片":"images/eyetracking.png",
+		"title":"Visual Attention in Landscape Preference",
+		"type":"Individual project",
+		"typology": "Academic Research / Landscape Perception",
+		"instructor":"Yan-Jou Lin",
+		"分類":"research,landscape",
+		"recognition": "Published in Landscape Research (SSCI)",
+		"連結":"project/eye-tracking.html"
+	},	
+
+	"eye-tracking-markov":{
+		"圖片":"images/saccade.png",
+		"title":"Markov Gaze Modeling",
+		"type":"Individual project",
+		"typology": "Academic Research / Landscape Perception",
+		"instructor":"Yan-Jou Lin",
+		"分類":"research,landscape",
+		"recognition": "Published in Journal of Outdoor Recreation Study (TSSCI)",
+		"連結":"project/eye-tracking-markov.html"
+	},	
+
+	"sloth":{
+		"圖片":"images/sloth/IMG_8200_thumbnail.gif",
+		"title":"Piranha Chasing Sloth",
+		"type":"Individual project",
+		"typology": "Kinetic Robotics / Interactive Design",
+		"instructor":"June-Hao Hou, Po-Ching Chou, Chen-An Lee",
+		"分類":"computational",
+		"連結":"project/sloth.html",
+		"timeline":"Aug 2024 (1 week)"
+
+	},
+	"active-ground":{
+		"圖片":"images/active-ground/RNDR-Outdoor Classroom.png",
+		"title":"Learning Playscape",
+		"type":"Individual project",
+		"typology": "Landscape Architecture / Public School Campus",
+		"instructor":"William Sullivan",
+		"site":"Chicago, Illinois, USA",
+		"分類":"landscape",
+		"連結":"project/active-ground.html"
+	},
+	"perceptual-paradox":{
+		"圖片":"images/perceptual-paradox/TDMovieOut4.4_small.gif",
+		"title":"Perceptual Paradox",
+		"type":"Individual project",
+		"typology": "Computational Graphics / Optical Art",
+		"instructor":"Chi-Min Hsieh",
+		"分類":"computational",
+		"連結":"project/perceptual-paradox.html",
+		"timeline":"Dec 2024 (2 weeks)"
+	},
+	"p5-exercises":{
+		"圖片":"images/tick-tick-boom.png",
+		"title":"p5 Exercises",
+		"type":"Individual project",
+		"typology": "Creative Coding",
+		"instructor":"June-Hao Hou",
+		"分類":"computational",
+		"連結":"project/p5-exercises.html"
+	}}

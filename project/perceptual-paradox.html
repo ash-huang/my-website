@@ -1,0 +1,78 @@
+<!doctype html>
+<base href="../">
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Perceptual Paradox</title>
+
+	<link href="css/root.css" rel="stylesheet" type="text/css">
+	<link href="css/nav.css" rel="stylesheet" type="text/css">
+	<link href="css/project-page.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/specs.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>
+	<script src="js/specs.js"></script>
+	 <script src="js/quilt.js" defer></script>
+     <script src="js/quilt-mp4.js" defer></script>
+
+</head>
+
+<body>
+
+	<header id="main-header"></header>
+	<section>
+		<div id="specs"></div>
+		<div class="one_pic"><img src="images/perceptual-paradox/TDMovieOut5.7.gif" fetchpriority="high" alt="hero"/></div>
+	</section>
+
+	<section class="intro">
+		<div class="intro_text">
+			<p>"Perceptual Paradox" is a holographic spatial experiment that merges non-Euclidean geometry with computational shader optics. Utilizing an impossible 3D Penrose Triangle intersected by an encircling ring and an absurdist pineapple tank, the project leverages custom GLSL shaders—combining Rembrandt directional lighting with Gooch warm/cool chromatic shading—to manipulate stereoscopic perception. Rendered for the Looking Glass multiview display via a 7×7 quilt matrix (49 discrete views), the work challenges conventional depth cues and prompts viewers to reconsider the boundaries between visual perception and physical reality.</p>
+		</div>
+	</section>
+
+
+
+	<section class="scalecontainer">
+	  <div class="normal_box" id="quiltImageContainer" style="width: 300px; height: 300px;" data-quilt="images/perceptual-paradox/my-quilt-image.jpg" loading="lazy">
+	    <canvas id="quiltImageCanvas"></canvas>
+	  </div>
+	</section>
+
+    <div class="textbox">Interactive 7×7 Quilt — 49 discrete render angles with cursor-driven perspective shift.</div>
+
+
+    <section class="scalecontainer">
+      <div id="quiltVideoContainer" style="width: 300px; height: 300px; margin: 0 auto; position: relative;">
+        <video 
+          id="quiltVideo" 
+          src="images/perceptual-paradox/my-quilt.mp4" 
+          preload="auto" 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          style="display: none;">
+        </video>
+        <canvas id="quiltVideoCanvas" style="width: 100%; height: 100%; display: block;"></canvas>
+      </div>
+    </section>
+
+	<div class="textbox">Shader-Rendered Loop — Pre-rendered GLSL animation sequence with interactive cursor-driven perspective shift.</div>
+
+	
+
+	<aside>
+		<a href="#main-header">
+			<div id="totop-placeholder"></div>
+		</a>
+	</aside>
+
+	<footer id="footer"></footer>
+
+</body>
+</html>
